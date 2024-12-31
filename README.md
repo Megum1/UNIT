@@ -74,10 +74,10 @@ The specific arguments and hyperparameters used to launch UNIT can be found in `
 | seed | 1024 | Random seed for reproducibility. |
 | batch_size | 128 | Batch size for training. |
 | target | 0 | The attack target label. |
-| lr | "0.001" | Learning rate. |
+| lr | 0.001 | Learning rate. |
 | n_steps | 300 | Number of activation tightening steps. |
-| data_rate | 3 | Ratio if training data for defense. |
-| acc_degrade | 1 | Tolerance of accuracy degradation. |
+| data_rate | 0.05 | Ratio if training data for defense. |
+| acc_degrade | 0.03 | Tolerance of accuracy degradation. |
 
 
 ### Outputs
