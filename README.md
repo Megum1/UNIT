@@ -88,7 +88,7 @@ The outputs are displayed directly in the command line. By default, the log is u
 
 
 ## Citation
-Please cite our paper if you find it useful for your research.:smile:
+Please cite our paper if you find it useful for your research.😀
 
 ```bibtex
 @inproceedings{cheng2025unit,
