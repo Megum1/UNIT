@@ -61,6 +61,13 @@ CUDA_VISIBLE_DEVICES="2" python evaluate.py --attack reflection
 In this example, we provide three typical backdoored models, i.e., BadNets, WaNet and Reflection
 For each model, the code snippet outputs the benign accuracy and attack success rate (ASR), along with a visualization of the trigger, e.g., `demo_badnet.png`.
 
+Apply UNIT to mitigate the backdoor effects:
+```bash
+CUDA_VISIBLE_DEVICES="0" python unit.py --attack badnet
+CUDA_VISIBLE_DEVICES="1" python unit.py --attack wanet
+CUDA_VISIBLE_DEVICES="2" python unit.py --attack reflection
+```
+
 ### Configurations
 The specific arguments and hyperparameters used to launch UNIT can be found in `./unit.py`, particularly in lines 377-391.
 
